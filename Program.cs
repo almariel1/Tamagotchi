@@ -82,6 +82,12 @@ namespace Tamagochi
                 Console.ForegroundColor = ConsoleColor.White;
                 goto link;
             }
+            catch (input > 3)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Надо вводить число от 1 до 3");
+                goto link;
+            }
 
         Console.ReadLine();
           
